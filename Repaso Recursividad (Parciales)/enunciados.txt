@@ -1,0 +1,32 @@
+. Los Desafíos de Listas y Recursividad
+⚠️ Regla estricta para todos estos ejercicios: NO SE ADMITIRÁ UNA SOLUCIÓN QUE TENGA UN CICLO DENTRO DE LA FUNCIÓN. NO DEFINIR MACROS NI FUNCIONES AUXILIARES
+.
+A. Creación de lista desde un entero: toDigits (Parcial 12/06/2025)
+El enunciado: Implementar la función recursiva toDigits que reciba un número entero sin signo (unsigned long), y retorne una lista con los dígitos del número en orden inverso
+. Si recibe el número 13329 debe retornar la lista 9 -> 2 -> 3 -> 3 -> 1
+. Si recibe el valor 0 retorna la lista vacía
+
+
+B. Filtrado con punteros a función: removeIf (Parcial 17/01/2025)
+El enunciado: Implementar la función recursiva removeIf que reciba una lista, una función criteria (que recibe un entero y retorna 1 ó 0) y un puntero a entero count (no inicializado)
+. La función debe eliminar de la lista todos los elementos que, al ser evaluados por la función criteria, retornen 1
+. En el parámetro de salida count se debe indicar exactamente cuántos elementos se eliminaron en total
+
+
+C. Agrupación y suma: balance (Recuperatorio 28/06/2024)
+El enunciado: Escribir una función recursiva balance que reciba como único parámetro una lista que representa los movimientos en la cuenta corriente de un cliente (donde hay varios importes seguidos para el mismo cliente)
+. Debe retornar una nueva lista donde tenga en cada nodo el identificador del cliente y el balance total de ese cliente (la suma de todos sus importes)
+
+
+D. Reordenamiento por aparición: addElem (Parcial 15/11/2024)
+El enunciado: Dada una lista donde cada nodo guarda un carácter (char) y una cantidad de hits, ordenada siempre en forma descendente por hits
+. Escribir la función recursiva addElem que reciba la lista actual y un carácter
+Si el elemento no está en la lista, agregarlo al final con el valor hits en 0
+Si el elemento ya está, debe incrementar en uno su campo hits y reubicarlo para que la lista siga ordenada descendentemente por hits
+
+
+E. El más difícil de reordenamiento: upPop (Recuperatorio 02/07/2025)
+El enunciado: Dada una lista en la cual se almacenan nombres de personas (strings) con su popularidad, ordenada de forma descendente por popularidad
+. Implementar la función recursiva upPop que reciba la lista, el nombre de una persona y un valor de incremento
+. Debe incrementar la popularidad de la persona en la cantidad indicada, desengancharla y volver a insertarla dejando la lista correctamente ordenada
+. Si la persona no está, se la agrega con esa popularidad
